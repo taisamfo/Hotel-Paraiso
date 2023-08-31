@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Paraíso</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#"><img src="./img/logo.png" alt="Hotel Paraíso"></a>
+
+        <nav>
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Reservas</a></li>
+            <li><a href="">Contatos</a></li>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Conheça este paraíso chamado Itacaré</h1>
+        <h2>"Aconchego, conforto, simpatia e alto astral"</h2><br>
+        
+        <a id="btn" class="btn" href="#">Saiba mais</a>
+
+    </section>
+
+    <section class="conheca-o-hotel">
+        <h3>Conheça o Hotel Paraíso</h3>
+        <p>Feche os olhos e imagine o paraíso. Um lugar no meio da mata atlântica, banhado de
+            paz ,tranquilidade, conforto e comodidade. </p>
+        <hr>
+        <ul class="grid">
+            <li class="small" style="background-image: url(./img/itacare-01.jpg)"></li>
+            <li class="large" style="background-image: url(./img/itacare-02.jpg)"></li>
+            <li class="large" style="background-image: url(./img/itacare-03.jpg)"></li>
+            <li class="small" style="background-image: url(./img/itarace-04.jpg)"></li>
+        </ul>
+
+
+    </section>
+    <section class="caracteristicas">
+        <h3>Único hotel pé na areia de Itacaré</h3>
+        <p>Implantado em uma área completamente arborizada, o Hotel Paraíso é o Único
+            hotel da região pé na areia de Itacaré. Aqui o mar será seu companheiro e verás as
+            belezas da natura constantemente.
+        </p>
+        <hr>
+        <ul class="grid">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <li>
+                <i class="material-icons">near_me</i>
+                <h4> Localização</h4><br>
+                <p>Localização privilegiada em cima de uma falésia com a maior parte de nossas unidades com vista direta
+                    para o mar. Uma experiência inesquecível. Acesso direto à praia paradisíaca torna esta experiência
+                    ainda mais exclusiva. E</p>
+            </li>
+            <li>
+                <i class="material-icons">&#xf06b;
+                </i>
+
+                <h4> Pacotes e ofertas</h4><br>
+                <p>Reserve agora com a melhor tarifa! Sabe
+                    aquele encontro descontraído com a familia e amigos?
+                    ou um momento relax?
+                    Nossa estrutura conta com uma diversidade de espaços
+                    que proporcionam momentos inesquecíveis.
+                </p>
+            <li>
+                <i class="material-icons">&#xf966;</i>
+
+                <h4> Acomodações</h4><br>
+                <p>Nossa acomodação também fornece um delicioso café da manhã bem próximo
+                    a piscina. Nossa infraestrutura proporciona a oportunidade perfeita
+                    para organizar vários eventos, como festas privadas,
+                    festas de aniversário, casamentos, eventos corporativos,
+                    ensaios fotográficos etc.</p>
+        </ul>
+    </section>
+
+    <section class="newletter">
+        <h3>Newsletter</h3>
+        <p>Assine nossa newsletter para se manter atualizado com nossos serviços e programações culturais.</p>
+        <hr>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Email">
+            <button type="button" id="cadastroBtn">Cadastrar</button>
+        </form>
+    </section>
+
+    <footer>
+
+
+        <ul>
+            <!-- Add font awesome icons -->
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-pinterest"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+
+
+        </ul>
+
+        <p>todos os direitos reservados - Hotel Paraíso </p>
+    </footer>
+
+    <script>
+
+        const cadastroBtn = document.getElementById("cadastroBtn");
+        
+        cadastroBtn.addEventListener("click", function() {
+            const emailInput = document.querySelector("#newsletterForm input[type='email']");
+            const email = emailInput.value;
+            
+            if (email) {
+                alert(`Bem-vindo(a) à nossa newsletter, ${email}!`);
+            } else {
+                alert("Por favor, insira um endereço de email válido.");
+            }
+        });
+        const saibaMaisBtn = document.getElementById("btn");
+        
+        saibaMaisBtn.addEventListener("click", function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+            alert("Seja muito bem vindo por aqui!");
+        });
+
+    </script>
+</body>
+
+</html>
